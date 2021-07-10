@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "137c445e-dbb4-4917-bb9a-73432a3a9d01",
+		"name": "API_REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET/pessoa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/search/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/search/60e738db835de02404f92e35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"search",
+						"60e738db835de02404f92e35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Carmen Jimenez\",\r\n    \"data_nac\": \"1982-12-03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/deletar/60e76474a61b4c0c1811deff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"deletar",
+						"60e76474a61b4c0c1811deff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Edgar Romero\",\r\n    \"data_nac\": \"1978-12-04\",\r\n    \"ativo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/update/60e7385e835de02404f92e31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"update",
+						"60e7385e835de02404f92e31"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
